@@ -116,5 +116,3 @@ def test_load_csv(mock_get_data_dir):
         load_csv('/test.csv')
         name, args, kwargs = mock_loadtxt.mock_calls[1]
         assert kwargs['fname'] == '/test.csv'
-
-# TODO(lesson-mocking) Implement a unit test for the load_csv function
